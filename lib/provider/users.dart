@@ -1,4 +1,6 @@
 
+// ignore_for_file: unnecessary_null_comparison, duplicate_ignore
+
 import 'dart:math';
 
 import 'package:flutter/material.dart';
@@ -26,6 +28,7 @@ class Users with ChangeNotifier {
       return;
     }
 
+    // ignore: unnecessary_null_comparison
     if (user.id != null &&
         user.id.trim().isNotEmpty &&
         _items.containsKey(user.id)) {
